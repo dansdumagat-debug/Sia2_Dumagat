@@ -46,7 +46,7 @@
         @if($products->count() > 0)
             @foreach($products as $product)
                 <p class="product">
-                    {{ $product->name }} - Quantity: {{ $product->quantity }} - Price: PHP {{ number_format($product->price, 2) }}
+                    {{ $product->name }} - Quantity: {{ $product->quantity }} - Price: ₱{{ number_format($product->price, 2) }}
                 </p>
             @endforeach
         @else

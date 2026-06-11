@@ -30,10 +30,10 @@ class ProductPageTest extends TestCase
         $response->assertSee('Product List');
         $response->assertSee('Sample Product 1');
         $response->assertSee('Quantity: 10');
-        $response->assertSee('PHP 99.99');
+        $response->assertSee('₱99.99');
         $response->assertSee('Sample Product 2');
         $response->assertSee('Quantity: 5');
-        $response->assertSee('PHP 149.50');
+        $response->assertSee('₱149.50');
     }
 
     public function test_products_page_displays_empty_message(): void
